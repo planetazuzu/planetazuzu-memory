@@ -305,6 +305,77 @@ Conjunto de archivos de configuración para agentes IA (OpenClaw, OpenCode). Inc
 
 ---
 
+## GTS-REPO-GUARDIAN
+
+- **Status:** completed
+- **Priority:** P1
+- **Start:** 2026-03-02
+- **End:** 2026-03-02
+- **Owner:** planetazuzu
+- **Dependencies:** null
+
+### Resumen
+Servidor MCP (Model Context Protocol) para gestión y revisión automática de repositorios GitHub. Automatiza la calidad de documentación de todos los repos de @planetazuzu.
+
+### Tech Stack
+- **Lenguaje:** TypeScript
+- **Runtime:** Node.js
+- **API:** GitHub REST API v3, GraphQL v4
+- **Protocolo:** MCP (Model Context Protocol)
+
+### Funcionalidades
+- `review_repository` - Análisis de calidad (0-100)
+- `generate_readme` - Generación automática de README
+- `clean_repository` - Limpieza y estructura
+- `review_all_repositories` - Revisión masiva
+- `apply_improvements` - Aplicar mejoras automáticamente
+- `watch_repositories` - Monitorización continua
+
+### Templates Include
+- README sanitario (con advertencia clínica, protocolos)
+- README tech (estándar)
+- README lab (experimental)
+
+### metadata
+```json
+{
+  "location": "/home/planetazuzu/work/En Curso/gts-repo-guardian",
+  "docs": ["README.md", ".env.example"],
+  "contacts": ["planetazuzu"],
+  "tags": ["mcp", "github", "automation", "typescript", "devtools"]
+}
+```
+
+---
+
+## REPOSITORIO MEMORIA (planetazuzu-memory)
+
+- **Status:** active
+- **Priority:** P0
+- **Start:** 2026-03-02
+- **End:** null
+- **Owner:** planetazuzu
+- **Dependencies:** null
+
+### Resumen
+Repositorio centralizado de memoria y estado de proyectos. Alimentado por MCP gts-repo-guardian.
+
+### Tech Stack
+- Markdown
+- Git
+
+### metadata
+```json
+{
+  "location": "/home/planetazuzu/.memory/",
+  "docs": ["projects/README.md", "docs/brain/", "docs/agents/", "stack.md", "architecture.md", "progress.md", "decisions.md", "relations.md"],
+  "contacts": ["planetazuzu"],
+  "tags": ["memory", "documentation", "state"]
+}
+```
+
+---
+
 ## PROYECTOS EN DIRECTORIO
 
 ### work/proyectos/ (Proyectos Activos)

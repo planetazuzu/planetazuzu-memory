@@ -72,6 +72,95 @@
 
 ---
 
+## 2026-03-02 (continuación)
+
+### gts-repo-guardian - MCP Creado
+
+**Realizado:**
+- Creación de servidor MCP completo para gestión de repos GitHub
+- Ubicación: `/home/planetazuzu/work/En Curso/gts-repo-guardian/`
+- Stack: TypeScript + Node.js + GitHub API
+
+**Archivos creados:**
+- `src/index.ts` - Servidor MCP principal
+- `src/tools/review.ts` - Revisión de repos con puntuación 0-100
+- `src/tools/readme.ts` - Generación automática de README
+- `src/tools/clean.ts` - Limpieza y estructura
+- `src/tools/batch.ts` - Revisión masiva
+- `src/tools/improve.ts` - Aplicar mejoras automáticamente
+- `src/tools/monitor.ts` - Monitorización continua
+- `src/config/rules.ts` - Reglas de calidad
+- `src/config/profiles.ts` - Configuración de perfiles
+- `src/templates/readme-sanitario.md` - Template sanitario
+- `src/templates/readme-tech.md` - Template tech
+- `src/templates/readme-lab.md` - Template lab
+- `.env.example` - Variables de entorno
+- `README.md` - Documentación
+
+**Funcionalidades implementadas:**
+1. `review_repository` - Analiza repo y da puntuación 0-100
+2. `generate_readme` - Genera README profesional
+3. `clean_repository` - Limpia y estructura
+4. `review_all_repositories` - Revisión masiva
+5. `apply_improvements` - Aplica mejoras
+6. `watch_repositories` - Monitoriza repos
+
+---
+
+### guia-tes-digital - README Actualizado
+
+**Realizado:**
+- Actualización de README con estándar GTS
+- Repo: https://github.com/planetazuzu/guia-tes-digital
+
+**Secciones añadidas:**
+- ✅ Advertencia clínica
+- ✅ Protocolos de referencia (ILCOR, ERC, SEMICYUC, SEMES)
+- ✅ Aviso legal
+- ✅ Cómo contribuir para TES
+- ✅ Ecosistema de apps sanitarias
+- ✅ Autor actualizado con LinkedIn
+
+---
+
+### Repositorios GitHub - Estado Actual
+
+**Públicos:** 15 repositorios
+
+Procesados:
+- ✅ guia-tes-digital (actualizado)
+
+Pendientes de procesar:
+- app-glsgow
+- rioja-ambulancias-mapa-pwa
+- ia-primeros-auxilios
+- app-P10
+- salvaia
+- revision_ambulancia
+- revision_ambulancia1
+- rioja-emergencia
+- salva-primeros-ia-espa
+- chat-api
+- informe-asistencias
+
+---
+
+### Memoria de Proyectos - Actualizada
+
+**Registros añadidos:**
+- GTS-REPO-GUARDIAN (completed)
+- REPOSITORIO MEMORIA (active)
+
+**Repositorios dokumentados:**
+- CodeClaw (pending)
+- TalentOs (active)
+- ZeroClaw (completed)
+- Sistema IA Distribuido (active)
+- GTS-REPO-GUARDIAN (completed)
+- 15 repositorios públicos de @planetazuzu
+
+---
+
 ## Antes de 2026-03-02
 
 - Proyecto ZeroClaw base completado (v0.1.0 - 2026-02-13)
