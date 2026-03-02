@@ -9,7 +9,8 @@ memoria/
 ├── skills/          # Skills de OpenCode/Claude
 ├── nexus-os/        # Planes y guías de Nexus OS
 ├── resumenes/       # Resúmenes de conversaciones
-└── otros/          # Varios
+├── otros/          # Varios
+└── docs/           # Documentos (PDFs, xlsx, docs)
 ```
 
 ## Categorías
@@ -35,9 +36,15 @@ Resúmenes consolidados de conversaciones:
 - README.md - Guía de instalación de skills
 - CONTRIBUTING.md
 - GMAIL_CLASSIFIER.md
-- pepper-knowledge-base.md
 - resumen-aciertos-fallos.md
 - Consolidacion_Contexto.md
+
+### docs/
+Documentos varios (PDFs, Excel, Word):
+- Documentos personales (DNI, vida laboral, hipotecas)
+- Finanzas (gastos, dataset financiero)
+- Proyectos (nexus-plan, guías)
+- Estudios y documentación
 
 ---
 *Última actualización: 2026-03-02*
