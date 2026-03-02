@@ -1,0 +1,16 @@
+{
+  "$schema": "https://opencode.ai/config.schema.json",
+  "mcp": {
+    "gmail": {
+      "type": "local",
+      "command": "python3",
+      "args": ["/root/gmail_mcp/server.py"],
+      "env": {
+        "GOOGLE_SERVICE_ACCOUNT_JSON": "${GOOGLE_SERVICE_ACCOUNT_JSON}",
+        "TELEGRAM_BOT_TOKEN": "8764458493:AAGgNOXJq09YpZgoyO8sWb7Opi94jSNrv60",
+        "TELEGRAM_CHAT_ID": "930463010",
+        "GOOGLE_SHEETS_ID": "1w_tUSvjZ1lqjL-hihJw83XcsbXoBzeCbLr8X68B1_Fg"
+      }
+    }
+  }
+}

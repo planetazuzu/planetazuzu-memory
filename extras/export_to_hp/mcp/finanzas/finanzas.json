@@ -1,0 +1,614 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "creado": "2025-02-23",
+    "periodo_analizado": "Sep 2024 – Feb 2025",
+    "moneda": "EUR",
+    "propietario": "Usuario",
+    "ultimo_update": "2026-02-24",
+    "descripcion": "Base de datos financiera personal para agente IA."
+  },
+  "perfil_financiero": {
+    "ingreso_nomina_mensual_estimado": 975.83,
+    "ingreso_medio_mensual_total": 1100.0,
+    "gasto_variable_medio_mensual": 650.0,
+    "compromisos_fijos_mensuales": 3219.3,
+    "deficit_mensual_estimado": -2119.3,
+    "fuente_cobertura_deficit": "Préstamo 850922737-1 (disposición periódica)",
+    "deuda_total_feb2025": 147640.46,
+    "situacion": "CRITICA",
+    "nota": "Los compromisos fijos superan 3x los ingresos nómina. El déficit se cubre con disposiciones del préstamo principal."
+  },
+  "presupuesto_mensual": {
+    "categorias": {
+      "Supermercado": {
+        "limite": 250.0,
+        "alerta_pct": 80
+      },
+      "Restaurantes": {
+        "limite": 60.0,
+        "alerta_pct": 80
+      },
+      "Ropa/Moda": {
+        "limite": 50.0,
+        "alerta_pct": 80
+      },
+      "Ocio/Varios": {
+        "limite": 40.0,
+        "alerta_pct": 80
+      },
+      "Belleza/Higiene": {
+        "limite": 30.0,
+        "alerta_pct": 80
+      },
+      "Compras Online": {
+        "limite": 60.0,
+        "alerta_pct": 80
+      },
+      "Salud/Farmacia": {
+        "limite": 50.0,
+        "alerta_pct": 80
+      },
+      "Transporte": {
+        "limite": 80.0,
+        "alerta_pct": 80
+      },
+      "Deporte": {
+        "limite": 30.0,
+        "alerta_pct": 80
+      },
+      "Mascotas": {
+        "limite": 30.0,
+        "alerta_pct": 80
+      },
+      "Hogar": {
+        "limite": 80.0,
+        "alerta_pct": 80
+      },
+      "Viajes": {
+        "limite": 150.0,
+        "alerta_pct": 80
+      },
+      "Tabaco": {
+        "limite": 20.0,
+        "alerta_pct": 100
+      },
+      "Retirada Efectivo": {
+        "limite": 100.0,
+        "alerta_pct": 100,
+        "nota": "MINIMIZAR."
+      },
+      "Formacion": {
+        "limite": 0.0,
+        "alerta_pct": 100,
+        "nota": "Autoescuela finalizada."
+      }
+    },
+    "fondo_emergencia": {
+      "objetivo": 1000.0,
+      "actual": 0.0,
+      "aportacion_mensual_objetivo": 75.0
+    }
+  },
+  "compromisos_fijos": [
+    {
+      "id": "prestamo_850922737",
+      "nombre": "Préstamo 850922737-1",
+      "categoria": "Prestamo",
+      "importe_mensual": -711.48,
+      "dia_cobro": 7,
+      "tipo": "FIJO",
+      "entidad": "Banco principal",
+      "saldo_pendiente_feb25": 7791.63,
+      "alerta": "CRITICA: En Ene-26 saldo llega a 0 pero Feb-26 muestra 99.024€. Verificar renovación.",
+      "activo": true
+    },
+    {
+      "id": "prestamo_853198848",
+      "nombre": "Préstamo 853198848-9",
+      "categoria": "Prestamo",
+      "importe_mensual": -146.45,
+      "dia_cobro": 3,
+      "tipo": "FIJO",
+      "entidad": "Banco principal",
+      "saldo_pendiente_feb25": 2636.1,
+      "activo": true
+    },
+    {
+      "id": "hipoteca",
+      "nombre": "Hipoteca",
+      "categoria": "Hipoteca",
+      "importe_mensual": -135.93,
+      "dia_cobro": 1,
+      "tipo": "VARIABLE",
+      "entidad": "Kutxabank",
+      "tasa_interes_pct": 2.5,
+      "saldo_pendiente_feb25": 149300.0,
+      "alerta": "Tipo variable al 2.5%. Vigilar Euribor.",
+      "activo": true
+    },
+    {
+      "id": "cetelem_1",
+      "nombre": "Cetelem (recibo 1)",
+      "categoria": "Financiacion",
+      "importe_mensual": -497.64,
+      "dia_cobro": 5,
+      "tipo": "FIJO",
+      "entidad": "Banco Cetelem",
+      "saldo_pendiente_feb25": 11445.72,
+      "activo": true
+    },
+    {
+      "id": "cetelem_2",
+      "nombre": "Cetelem (recibo 2)",
+      "categoria": "Financiacion",
+      "importe_mensual": -245.32,
+      "dia_cobro": 5,
+      "tipo": "FIJO",
+      "entidad": "Banco Cetelem",
+      "saldo_pendiente_feb25": 5642.36,
+      "activo": true
+    },
+    {
+      "id": "visa_80369",
+      "nombre": "Liquidación Visa Dual ...80369",
+      "categoria": "Tarjeta",
+      "importe_mensual": -490.0,
+      "dia_cobro": 1,
+      "tipo": "VARIABLE",
+      "entidad": "Banco principal",
+      "activo": true
+    },
+    {
+      "id": "visa_80419",
+      "nombre": "Liquidación Visa Dual ...80419",
+      "categoria": "Tarjeta",
+      "importe_mensual": -900.0,
+      "dia_cobro": 1,
+      "tipo": "VARIABLE",
+      "entidad": "Banco principal",
+      "activo": true
+    },
+    {
+      "id": "seg_vida_1",
+      "nombre": "Kutxabank Seg. Vida (1)",
+      "categoria": "Seguro",
+      "importe_mensual": -20.0,
+      "dia_cobro": 5,
+      "activo": true
+    },
+    {
+      "id": "seg_vida_2",
+      "nombre": "Kutxabank Seg. Vida (2)",
+      "categoria": "Seguro",
+      "importe_mensual": -15.0,
+      "dia_cobro": 5,
+      "activo": true
+    },
+    {
+      "id": "basic_fit",
+      "nombre": "Basic-Fit",
+      "categoria": "Otros",
+      "importe_mensual": -24.99,
+      "dia_cobro": 4,
+      "activo": true
+    },
+    {
+      "id": "traspaso_911",
+      "nombre": "Traspaso 911341954",
+      "categoria": "Otros",
+      "importe_mensual": -8.99,
+      "dia_cobro": 10,
+      "activo": true
+    },
+    {
+      "id": "ayto_logrono",
+      "nombre": "Recibo Ayto. Logroño",
+      "categoria": "Impuesto",
+      "importe_mensual": -76.67,
+      "dia_cobro": 5,
+      "tipo": "TRIMESTRAL",
+      "activo": true
+    },
+    {
+      "id": "uteslar",
+      "nombre": "UTESLAR",
+      "categoria": "Otros",
+      "importe_mensual": -20.0,
+      "dia_cobro": 17,
+      "activo": true
+    },
+    {
+      "id": "chatgpt",
+      "nombre": "ChatGPT / OpenAI",
+      "categoria": "Suscripcion",
+      "importe_mensual": -23.0,
+      "dia_cobro": 12,
+      "activo": true
+    },
+    {
+      "id": "cursor_ai",
+      "nombre": "Cursor AI",
+      "categoria": "Suscripcion",
+      "importe_mensual": -17.5,
+      "dia_cobro": 1,
+      "activo": true
+    },
+    {
+      "id": "ionos",
+      "nombre": "IONOS Cloud",
+      "categoria": "Suscripcion",
+      "importe_mensual": -6.5,
+      "dia_cobro": 3,
+      "activo": true
+    },
+    {
+      "id": "disney_plus",
+      "nombre": "Disney+",
+      "categoria": "Suscripcion",
+      "importe_mensual": -6.99,
+      "dia_cobro": 10,
+      "activo": true
+    },
+    {
+      "id": "amazon_prime",
+      "nombre": "Amazon Prime",
+      "categoria": "Suscripcion",
+      "importe_mensual": -9.99,
+      "dia_cobro": 1,
+      "activo": true
+    }
+  ],
+  "pagos_especiales_pendientes": [
+    {
+      "id": "hacienda_irpf_2024",
+      "nombre": "IRPF 2024",
+      "fecha_limite": "2025-06-30",
+      "estado": "PENDIENTE_CALCULAR",
+      "alerta": "Calcular antes del 30 de junio."
+    },
+    {
+      "id": "ibi_2025",
+      "nombre": "IBI 2025",
+      "fecha_limite": "2025-11-30",
+      "estado": "PENDIENTE_CALCULAR"
+    },
+    {
+      "id": "seguro_coche",
+      "nombre": "Renovación Seguro Coche (Verti)",
+      "importe_estimado": 373.26,
+      "fecha_limite": "2026-02-06",
+      "estado": "PENDIENTE"
+    }
+  ],
+  "movimientos": [
+    {
+      "fecha": "2024-09-01",
+      "mes": "Septiembre",
+      "descripcion": "NOMINA",
+      "importe": 998.82,
+      "tipo": "Ingreso",
+      "categoria": "Ingreso"
+    },
+    {
+      "fecha": "2024-09-02",
+      "mes": "Septiembre",
+      "descripcion": "PRIMAPRIX",
+      "importe": -9.25,
+      "tipo": "Gasto",
+      "categoria": "Supermercado"
+    },
+    {
+      "fecha": "2024-09-04",
+      "mes": "Septiembre",
+      "descripcion": "ALCAMPO",
+      "importe": -5.49,
+      "tipo": "Gasto",
+      "categoria": "Supermercado"
+    },
+    {
+      "fecha": "2024-09-05",
+      "mes": "Septiembre",
+      "descripcion": "DRUNI",
+      "importe": -22.95,
+      "tipo": "Gasto",
+      "categoria": "Belleza/Higiene"
+    },
+    {
+      "fecha": "2024-09-05",
+      "mes": "Septiembre",
+      "descripcion": "MERCADONA",
+      "importe": -6.4,
+      "tipo": "Gasto",
+      "categoria": "Supermercado"
+    },
+    {
+      "fecha": "2024-09-05",
+      "mes": "Septiembre",
+      "descripcion": "BAR LAS TORRES",
+      "importe": -16.9,
+      "tipo": "Gasto",
+      "categoria": "Restaurantes"
+    },
+    {
+      "fecha": "2024-09-05",
+      "mes": "Septiembre",
+      "descripcion": "SPRINGFIELD",
+      "importe": -17.0,
+      "tipo": "Gasto",
+      "categoria": "Ropa/Moda"
+    },
+    {
+      "fecha": "2024-09-06",
+      "mes": "Septiembre",
+      "descripcion": "I LOVE DOG WASH",
+      "importe": -12.0,
+      "tipo": "Gasto",
+      "categoria": "Mascotas"
+    },
+    {
+      "fecha": "2024-09-07",
+      "mes": "Septiembre",
+      "descripcion": "RETIRADA EFECTIVO",
+      "importe": -510.0,
+      "tipo": "Gasto",
+      "categoria": "Retirada Efectivo"
+    },
+    {
+      "fecha": "2024-09-12",
+      "mes": "Septiembre",
+      "descripcion": "MERCADONA",
+      "importe": -7.38,
+      "tipo": "Gasto",
+      "categoria": "Supermercado"
+    },
+    {
+      "fecha": "2024-09-12",
+      "mes": "Septiembre",
+      "descripcion": "FARMACIA",
+      "importe": -19.8,
+      "tipo": "Gasto",
+      "categoria": "Salud/Farmacia"
+    },
+    {
+      "fecha": "2024-09-12",
+      "mes": "Septiembre",
+      "descripcion": "CARREFOUR",
+      "importe": -25.1,
+      "tipo": "Gasto",
+      "categoria": "Supermercado"
+    },
+    {
+      "fecha": "2024-09-12",
+      "mes": "Septiembre",
+      "descripcion": "DRUNI",
+      "importe": -45.0,
+      "tipo": "Gasto",
+      "categoria": "Belleza/Higiene"
+    },
+    {
+      "fecha": "2024-09-13",
+      "mes": "Septiembre",
+      "descripcion": "LAVANDERIA",
+      "importe": -20.8,
+      "tipo": "Gasto",
+      "categoria": "Hogar"
+    },
+    {
+      "fecha": "2024-09-13",
+      "mes": "Septiembre",
+      "descripcion": "RETIRADA EFECTIVO",
+      "importe": -50.0,
+      "tipo": "Gasto",
+      "categoria": "Retirada Efectivo"
+    },
+    {
+      "fecha": "2024-09-16",
+      "mes": "Septiembre",
+      "descripcion": "AUTOESCUELA SARRAMIAN",
+      "importe": -200.0,
+      "tipo": "Gasto",
+      "categoria": "Formacion"
+    },
+    {
+      "fecha": "2024-09-16",
+      "mes": "Septiembre",
+      "descripcion": "ALCAMPO",
+      "importe": -10.22,
+      "tipo": "Gasto",
+      "categoria": "Supermercado"
+    },
+    {
+      "fecha": "2024-09-16",
+      "mes": "Septiembre",
+      "descripcion": "MERCADONA",
+      "importe": -16.25,
+      "tipo": "Gasto",
+      "categoria": "Supermercado"
+    },
+    {
+      "fecha": "2024-09-16",
+      "mes": "Septiembre",
+      "descripcion": "MICOLET",
+      "importe": -4.99,
+      "tipo": "Gasto",
+      "categoria": "Ropa/Moda"
+    },
+    {
+      "fecha": "2024-09-18",
+      "mes": "Septiembre",
+      "descripcion": "VINTED VENTA",
+      "importe": 11.2,
+      "tipo": "Ingreso",
+      "categoria": "Vinted Ventas"
+    },
+    {
+      "fecha": "2024-09-19",
+      "mes": "Septiembre",
+      "descripcion": "AUTOESCUELA SARRAMIAN",
+      "importe": -40.0,
+      "tipo": "Gasto",
+      "categoria": "Formacion"
+    },
+    {
+      "fecha": "2024-09-19",
+      "mes": "Septiembre",
+      "descripcion": "MERCADONA",
+      "importe": -99.62,
+      "tipo": "Gasto",
+      "categoria": "Supermercado"
+    },
+    {
+      "fecha": "2024-09-19",
+      "mes": "Septiembre",
+      "descripcion": "ESTANCO",
+      "importe": -5.7,
+      "tipo": "Gasto",
+      "categoria": "Tabaco"
+    },
+    {
+      "fecha": "2024-09-20",
+      "mes": "Septiembre",
+      "descripcion": "NICOS BRASERIA",
+      "importe": -18.5,
+      "tipo": "Gasto",
+      "categoria": "Restaurantes"
+    },
+    {
+      "fecha": "2024-09-20",
+      "mes": "Septiembre",
+      "descripcion": "ALCAMPO",
+      "importe": -34.99,
+      "tipo": "Gasto",
+      "categoria": "Supermercado"
+    },
+    {
+      "fecha": "2024-09-20",
+      "mes": "Septiembre",
+      "descripcion": "CINE",
+      "importe": -12.0,
+      "tipo": "Gasto",
+      "categoria": "Ocio/Varios"
+    },
+    {
+      "fecha": "2024-09-21",
+      "mes": "Septiembre",
+      "descripcion": "OMIO TRANSPORTE",
+      "importe": -55.2,
+      "tipo": "Gasto",
+      "categoria": "Transporte"
+    },
+    {
+      "fecha": "2024-09-25",
+      "mes": "Septiembre",
+      "descripcion": "MERCADONA",
+      "importe": -25.46,
+      "tipo": "Gasto",
+      "categoria": "Supermercado"
+    },
+    {
+      "fecha": "2024-09-27",
+      "mes": "Septiembre",
+      "descripcion": "DSM BEAUTY",
+      "importe": -16.38,
+      "tipo": "Gasto",
+      "categoria": "Belleza/Higiene"
+    },
+    {
+      "fecha": "2024-09-27",
+      "mes": "Septiembre",
+      "descripcion": "BURGER KING",
+      "importe": -19.09,
+      "tipo": "Gasto",
+      "categoria": "Restaurantes"
+    },
+    {
+      "fecha": "2024-09-27",
+      "mes": "Septiembre",
+      "descripcion": "DRUNI",
+      "importe": -8.95,
+      "tipo": "Gasto",
+      "categoria": "Belleza/Higiene"
+    },
+    {
+      "fecha": "2024-09-27",
+      "mes": "Septiembre",
+      "descripcion": "MERCADONA",
+      "importe": -94.44,
+      "tipo": "Gasto",
+      "categoria": "Supermercado"
+    },
+    {
+      "fecha": "2024-09-27",
+      "mes": "Septiembre",
+      "descripcion": "SPRINTER DEPORTES",
+      "importe": -70.0,
+      "tipo": "Gasto",
+      "categoria": "Deporte"
+    },
+    {
+      "fecha": "2024-09-29",
+      "mes": "Septiembre",
+      "descripcion": "AUTOESCUELA SARRAMIAN",
+      "importe": -240.0,
+      "tipo": "Gasto",
+      "categoria": "Formacion"
+    },
+    {
+      "fecha": "2024-10-13",
+      "mes": "Octubre",
+      "descripcion": "AMAZON",
+      "importe": -45.0,
+      "tipo": "Gasto",
+      "categoria": "Compras Online"
+    },
+    {
+      "fecha": "2024-10-14",
+      "mes": "Octubre",
+      "descripcion": "ZARA",
+      "importe": -33.0,
+      "tipo": "Gasto",
+      "categoria": "Ropa/Moda"
+    },
+    {
+      "fecha": "2024-10-14",
+      "mes": "Octubre",
+      "descripcion": "MERCADONA",
+      "importe": -32.68,
+      "tipo": "Gasto",
+      "categoria": "Supermercado"
+    },
+    {
+      "fecha": "2024-10-17",
+      "mes": "Octubre",
+      "descripcion": "ALDI",
+      "importe": -19.54,
+      "tipo": "Gasto",
+      "categoria": "Supermercado"
+    },
+    {
+      "fecha": "2024-10-17",
+      "mes": "Octubre",
+      "descripcion": "DECATHLON",
+      "importe": -19.97,
+      "tipo": "Gasto",
+      "categoria": "Deporte"
+    },
+    {
+      "fecha": "2026-02-24",
+      "mes": "February",
+      "descripcion": "TEST GASTO",
+      "importe": -50.0,
+      "tipo": "Gasto",
+      "categoria": "ocio"
+    },
+    {
+      "fecha": "2026-02-24",
+      "mes": "February",
+      "descripcion": "TEST OPENCODE",
+      "importe": -10.5,
+      "tipo": "Gasto",
+      "categoria": "Supermercado"
+    }
+  ]
+}
