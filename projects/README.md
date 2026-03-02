@@ -408,6 +408,43 @@ Proyectos adicionales
 
 ---
 
+## MCP-SERVERS (Colección)
+
+- **Status:** active
+- **Priority:** P1
+- **Start:** 2026-02-24
+- **End:** null
+- **Owner:** planetazuzu
+- **Dependencies:** null
+
+### Resumen
+Colección de MCP servers instalados en el servidor Nexus. Incluye automatización de LinkedIn, finanzas y monitoreo de servidor.
+
+### Tech Stack
+- **linkedin_mcp:** Python, Playwright, Telegram Bot
+- **mcp-finanzas:** Python, FastAPI, httpx
+- **server-monitor:** Node.js, MCP SDK
+
+### Roadmap
+| Proyecto | Estado | Notas |
+|----------|--------|-------|
+| server-monitor | ✅ | Funcional, usado por OpenCode |
+| linkedin_mcp | ⚠️ | Requiere credenciales LinkedIn |
+| mcp-finanzas | ⚠️ | Requiere configuración |
+
+### metadata
+```json
+{
+  "location": "mcp-servers/",
+  "github": "planetazuzu/planetazuzu-memory/tree/main/mcp-servers",
+  "docs": ["mcp-servers/README.md"],
+  "contacts": ["planetazuzu"],
+  "tags": ["mcp", "automation", "monitoring"]
+}
+```
+
+---
+
 *Este archivo es leído por agentes IA para entender el estado de los proyectos.*
 *Para añadir un nuevo proyecto, seguir el formato arriba.*
 *Última actualización: 2026-03-02*
