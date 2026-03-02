@@ -1,0 +1,434 @@
+# INVENTARIO COMPLETO - VPS vmi2782086
+# Fecha: 2026-02-27
+# Servidor: vmi2782086 (Contabo) - IP: 207.180.226.141
+
+================================================================================
+SECCIÓN 1: CEREBRO
+================================================================================
+
+CARPETA: /root/cerebro
+- Tipo: carpeta
+- Tamaño: 216K
+- Fecha mod: 2026-02-27 18:34
+- Categoría: Cerebro
+- Relevancia: ALTA
+
+  Archivos contenidos:
+  - telegram_bot.py (7152 bytes) - Bot principal de Telegram
+  - core/telepathy.py - Módulo de comunicación
+  - config/telegram.conf - Configuración de Telegram
+  - ai/ - Directorio de IA
+  - status/ - Estado del sistema
+
+SERVICIO: cerebro-telegram.service
+- Estado: active (running)
+- PID: 673834
+- Relevancia: ALTA
+
+================================================================================
+SECCIÓN 2: OPENCLAW
+================================================================================
+
+CARPETA: /root/.openclaw
+- Tipo: carpeta
+- Tamaño: 1.6M
+- Fecha mod: 2026-02-27
+- Categoría: OpenClaw
+- Relevancia: ALTA
+
+  Archivos contenidos:
+  - openclaw.json (configuración principal)
+  - openclaw.json.bak / .bak.1-4 (backups)
+  - opencode-registry.json
+  - agents/ (configuración de agentes)
+  - memory/main.sqlite (base de datos de memoria)
+  - workspace/ (espacio de trabajo)
+  - credentials/ (credenciales)
+  - cron/jobs.json (tareas programadas)
+  - logs/config-audit.jsonl
+  - media/inbound/ (archivos recibidos)
+  - canvas/index.html
+  - telegram/ (configuración Telegram)
+  - identity/device.json
+
+CARPETA: /root/.openclaw-local
+- Tipo: carpeta
+- Categoría: OpenClaw
+- Relevancia: MEDIA
+
+================================================================================
+SECCIÓN 3: FINBOT
+================================================================================
+
+CARPETA: /root/finbot_mcp
+- Tipo: carpeta
+- Tamaño: 264K
+- Fecha mod: 2026-02-24
+- Categoría: MCP / FinBot
+- Relevancia: ALTA
+
+  Archivos contenidos:
+  - finbot_mcp/server.py (servidor MCP)
+  - finbot_mcp/finbot_telegram.py (bot Telegram)
+  - finbot_mcp/finbot-mcp.service (servicio systemd)
+  - finbot_mcp/finbot.service
+  - finbot_mcp/cronjobs/alertas.py
+  - agente_finanzas/finbot.py
+
+SERVICIO: finbot.service
+- Estado: active (running)
+- Relevancia: ALTA
+
+ARCHIVOS RELACIONADOS:
+- /root/Memoria/finbot_mcp_opencode.zip
+- /root/caja/finbot_mcp_opencode.zip
+- /root/Memoria/finbot-488321-*.json
+- /root/Memoria/finbot_agente_financiero.zip
+- /root/caja/finbot_agente_financiero.zip
+
+================================================================================
+SECCIÓN 4: GMAIL MCP
+================================================================================
+
+CARPETA: /root/gmail_mcp
+- Tipo: carpeta
+- Tamaño: 184K
+- Fecha mod: 2026-02-27
+- Categoría: MCP / Gmail
+- Relevancia: ALTA
+
+  Archivos contenidos:
+  - server.py (32066 bytes) - Servidor MCP Gmail
+  - server_http.py (26059 bytes) - Servidor HTTP
+  - credentials.json - Credenciales OAuth
+  - token.json - Token de acceso
+  - deploy.sh - Script de despliegue
+  - opencode.json - Configuración OpenCode
+  - cronjobs/gmail_alertas.py - Alertas de Gmail
+
+ARCHIVOS RELACIONADOS:
+- /root/.opencode/skills/project-memory/references/gmail-mcp.md
+
+================================================================================
+SECCIÓN 5: LINKEDIN MCP
+================================================================================
+
+CARPETA: /root/linkedin_mcp
+- Tipo: carpeta
+- Tamaño: 52K
+- Fecha mod: 2026-02-24
+- Categoría: MCP / LinkedIn
+- Relevancia: ALTA
+
+  Archivos contenidos:
+  - server.py (25653 bytes) - Servidor MCP LinkedIn
+  - deploy.sh - Script de despliegue
+  - opencode.json - Configuración OpenCode
+  - cronjobs/linkedin_alertas.py - Alertas de LinkedIn
+
+================================================================================
+SECCIÓN 6: MCP FINANZAS
+================================================================================
+
+CARPETA: /root/mcp-finanzas
+- Tipo: carpeta
+- Tamaño: 88K
+- Fecha mod: 2026-02-24
+- Categoría: MCP / Finanzas
+- Relevancia: ALTA
+
+  Archivos contenidos:
+  - server.py (22724 bytes) - Servidor MCP de Finanzas
+  - config.py - Configuración
+  - finanzas.json - Datos financieros
+  - tools/ - Herramientas adicionales
+
+================================================================================
+SECCIÓN 7: ALERT HUB
+================================================================================
+
+CARPETA: /root/alert_hub
+- Tipo: carpeta
+- Tamaño: 72K
+- Fecha mod: 2026-02-25
+- Categoría: Alert / Notificaciones
+- Relevancia: ALTA
+
+  Archivos contenidos:
+  - server.py (15207 bytes) - Servidor central de alertas
+  - .env - Variables de entorno
+  - client_secret.json - Credenciales OAuth
+  - config/ - Configuración
+  - src/ - Código fuente
+  - deploy.sh - Script de despliegue
+  - cron_check.sh - Verificación de cron
+  - requirements.txt - Dependencias
+
+FUNCIONALIDADES:
+- Integración con Telegram Bot
+- Envío de alertas unificadas
+- Múltiples fuentes de datos
+
+================================================================================
+SECCIÓN 8: MEMORIA / DATOS
+================================================================================
+
+CARPETA: /root/Memoria
+- Tipo: carpeta
+- Tamaño: 780M
+- Fecha mod: 2026-02-25
+- Categoría: Memoria / Datos
+- Relevancia: ALTA
+
+  Archivos contenidos (seleccionados):
+  - nexus-plan.docx
+  - NEXUS_OS_30_DAY_PLAN.md
+  - GMAIL_CLASSIFIER.md
+  - Consolidacion_Contexto.md
+  - Dataset_Financiero_2025_AgenteIA.xlsx
+  - Documentos PDF varios
+  - FINANZAS/ (directorio)
+  - finbot_*.zip (backups de finbot)
+  - DNI_34266022R.pdf
+  - ESCRITURA HIPOTECA DE LOGROÑO.pdf
+
+================================================================================
+SECCIÓN 9: NEXUS
+================================================================================
+
+CARPETA: /var/www/nexus-os
+- Tipo: carpeta
+- Categoría: Nexus / Proyecto Web
+- Relevancia: ALTA
+
+  Contenido:
+  - backend/ (FastAPI)
+  - frontend/ (HTML/JS)
+  - mcp/ (MCP de Nexus)
+  - PLAN.md
+  - Dockerfile
+  - docker-compose.yml
+
+CARPETA: /opt/nexus-monitor
+- Tipo: carpeta
+- Tamaño: 42M
+- Fecha mod: 2026-02-25
+- Categoría: Nexus / Monitor
+- Relevancia: ALTA
+
+  Archivos contenidos:
+  - main.py (5060 bytes)
+  - .env - Variables de entorno
+  - config/ - Configuración
+  - core/ - Núcleo
+  - monitor/ - Módulos de monitoreo
+  - nexus-monitor.service - Servicio systemd
+  - requirements.txt - Dependencias
+
+SERVICIO: nexus-monitor.service
+- Estado: active (running)
+- Relevancia: ALTA
+
+CARPETA: /root/Memoria/nexus-plan.docx
+- Tipo: archivo
+- Categoría: Nexus / Plan
+- Relevancia: MEDIA
+
+================================================================================
+SECCIÓN 10: SCRIPTS PROPIOS Y HERRAMIENTAS
+================================================================================
+
+CARPETA: /opt/webhook-deploy
+- Tipo: carpeta
+- Tamaño: 16K
+- Fecha mod: 2026-02-27
+- Categoría: Script / Deploy
+- Relevancia: ALTA
+
+  Archivos contenidos:
+  - webhook_receiver.py (4965 bytes) - Receptor de webhooks
+  - requirements.txt - Dependencias
+
+  Funcionalidad:
+  - Puerto 9876
+  - Endpoints: /webhook/guia-tes, /webhook/nexus-os
+  - Validación de secrets GitHub
+  - Logs en /var/log/deploy.log
+
+CARPETA: /opt/server-monitor
+- Tipo: carpeta
+- Tamaño: 63M
+- Fecha mod: 2026-02-25
+- Categoría: Script / Monitor
+- Relevancia: MEDIA
+
+  Archivos contenidos:
+  - mcp-runner.sh - Script MCP
+  - package.json - Dependencias Node.js
+  - node_modules/ - Módulos Node
+  - src/ - Código fuente
+
+CARPETA: /opt/blackbox
+- Tipo: carpeta
+- Tamaño: 78M
+- Fecha mod: 2026-02-20
+- Categoría: Script / IA
+- Relevancia: MEDIA
+
+  Archivos contenidos:
+  - docker-compose.yml
+  - apps/blackbox/ - Aplicación principal
+  - tools/gmail_classifier.py
+  - tools/gmail_reader.py
+  - tools/daily_summary.py
+  - scripts/plan-talentos.sh
+  - scripts/daily-summary-cron.sh
+
+================================================================================
+SECCIÓN 11: OPENCODE CONFIGURATION
+================================================================================
+
+CARPETA: /root/.opencode
+- Tipo: carpeta
+- Tamaño: ~5M (estimado)
+- Fecha mod: 2026-02-27
+- Categoría: Config / OpenCode
+- Relevancia: ALTA
+
+  Archivos contenidos:
+  - opencode.json - Configuración principal
+  - finbot_instructions.md - Instrucciones de FinBot
+  - skills/ - Skills de OpenCode (20 skills)
+  - docs/ - Documentación
+  - bin/ - Binarios
+  - node_modules/ - Dependencias
+  - AGENTS.md - Configuración de agentes
+
+SKILLS INSTALADOS:
+- agent-orchestration
+- api-design
+- code-review
+- context-injection
+- database-design
+- devdocs
+- nexus-os-developer
+- onboarding
+- openclaw-bridge
+- performance-profiling
+- project-memory
+- prompt-engineering
+- role-based-access
+- security-audit
+- specialized-formatting
+- task-automation
+- tech-debt-tracker
+- tool-extension
+- ultrabrain
+- visual-engineering
+- workflow-integration
+
+================================================================================
+SECCIÓN 12: SERVICIOS SYSTEMD
+================================================================================
+
+SERVICIOS ACTIVOS RELACIONADOS:
+1. cerebro-telegram.service - Cerebro Bot Telegram
+   - Estado: active (running)
+   - PID: 673834
+
+2. finbot.service - FinBot Telegram
+   - Estado: active (running)
+
+3. nexus-monitor.service - Monitor de VPS
+   - Estado: active (running)
+
+4. webhook-deploy.service - Receptor de webhooks
+   - Estado: active (running)
+   - Puerto: 9876
+
+================================================================================
+SECCIÓN 13: ARCHIVOS DE CONFIGURACIÓN VARIOS
+================================================================================
+
+- /root/.opencode/finbot_instructions.md - Instrucciones para FinBot
+- /root/.openclaw/opencode-registry.json - Registro de OpenCode
+- /root/.openclaw/agents/main/agent/auth.json - Autenticación
+- /root/.openclaw/agents/main/agent/models.json - Modelos LLM
+- /root/.openclaw/cron/jobs.json - Tareas programadas
+- /root/.openclaw/workspace/ - Workspace de trabajo
+- /root/.openclaw/memory/main.sqlite - Base de datos de memoria
+
+================================================================================
+SECCIÓN 14: CRONJOBS Y TAREAS PROGRAMADAS
+================================================================================
+
+- /root/gmail_mcp/cronjobs/gmail_alertas.py
+- /root/linkedin_mcp/cronjobs/linkedin_alertas.py
+- /root/finbot_mcp/finbot_mcp/cronjobs/alertas.py
+- /root/.openclaw/cron/jobs.json
+- /opt/blackbox/scripts/daily-summary-cron.sh
+
+================================================================================
+RESUMEN FINAL
+================================================================================
+
+TOTAL CARPETAS RELEVANTES: 15
+- /root/cerebro (216K)
+- /root/.openclaw (1.6M)
+- /root/finbot_mcp (264K)
+- /root/gmail_mcp (184K)
+- /root/linkedin_mcp (52K)
+- /root/mcp-finanzas (88K)
+- /root/alert_hub (72K)
+- /root/Memoria (780M)
+- /root/.opencode (~5M)
+- /root/.openclaw-local
+- /var/www/nexus-os
+- /opt/nexus-monitor (42M)
+- /opt/webhook-deploy (16K)
+- /opt/server-monitor (63M)
+- /opt/blackbox (78M)
+
+TOTAL ARCHIVOS RELEVANTES: ~200+ (incluyendo subdirectorios)
+
+TAMAÑO TOTAL ESTIMADO: ~970MB (excluyendo node_modules y caches)
+
+CANTIDAD DE SERVICIOS ACTIVOS: 4
+1. cerebro-telegram.service
+2. finbot.service
+3. nexus-monitor.service
+4. webhook-deploy.service
+
+================================================================================
+SUGERENCIAS DE MISGRACIÓN A HP (g1 - 192.168.1.139)
+================================================================================
+
+PRIORIDAD ALTA (Migrar primero):
+1. /root/cerebro - Sistema de IA completo con Telegram
+2. /root/.openclaw - Configuración y memoria de OpenClaw
+3. /root/finbot_mcp - Agente financiero con Telegram
+4. /root/gmail_mcp - Integración con Gmail
+5. /root/linkedin_mcp - Integración con LinkedIn
+6. /root/mcp-finanzas - MCP de finanzas
+7. /root/alert_hub - Sistema de alertas unificado
+
+PRIORIDAD MEDIA (Migrar después):
+8. /opt/nexus-monitor - Monitor del VPS
+9. /opt/webhook-deploy - Webhook receiver
+10. /root/.opencode - Configuración de OpenCode
+
+PRIORIDAD BAJA (Opcional):
+11. /root/Memoria - Datos y documentos (780M)
+12. /opt/blackbox - Herramientas adicionales
+13. /opt/server-monitor - Monitor legacy
+
+NOTAS:
+- Los servicios systemd deben recrearse en HP
+- Las credenciales OAuth deben transferirse o renovarse
+- Los tokens de Telegram deben reconfigurarse
+- Los cronjobs deben recrearse
+- El tamaño total sin caches es ~190MB (carpetas principales)
+
+================================================================================
+FIN DEL INVENTARIO
+================================================================================

@@ -1,0 +1,149 @@
+# EXPORT SUMMARY - Preparado para HP
+# Fecha: 2026-02-27
+# Servidor origen: vmi2782086 (207.180.226.141)
+
+================================================================================
+CARPETAS INCLUIDAS
+================================================================================
+
+/root/export_to_hp/
+├── core/
+│   ├── cerebro/          (Sistema de IA con Telegram)
+│   │   ├── telegram_bot.py
+│   │   ├── ai/           (bridge.py, claude_client.py, ollama_client.py, opencode_client.py)
+│   │   ├── config/       (config_loader.py, telegram.conf)
+│   │   ├── core/         (daemon.py, healer.py, monitor.py, scheduler.py, telepathy.py)
+│   │   └── status/
+│   ├── mcp/
+│   │   ├── finbot/       (Agente financiero)
+│   │   │   ├── agente_finanzas/
+│   │   │   └── finbot_mcp/
+│   │   ├── gmail/        (Integración Gmail)
+│   │   ├── linkedin/     (Integración LinkedIn)
+│   │   ├── finanzas/     (MCP de Finanzas)
+│   │   └── alert/        (Sistema de alertas)
+│   └── configs/
+│       ├── openclaw.json
+│       └── opencode-registry.json
+├── configs/              (Vacío - reservado)
+└── scripts/              (Vacío - reservado)
+
+================================================================================
+NÚMERO TOTAL DE ARCHIVOS
+================================================================================
+
+51 archivos
+
+================================================================================
+TAMAÑO TOTAL
+================================================================================
+
+588K (0.57 MB)
+
+Desglose por módulo:
+- cerebro:        ~68K
+- finbot_mcp:    ~138K
+- gmail_mcp:      ~72K
+- linkedin_mcp:   ~31K
+- mcp-finanzas:   ~38K
+- alert_hub:      ~18K
+- configs:       ~3K
+
+================================================================================
+ARCHIVOS EXCLUIDOS (NO COPIADOS)
+================================================================================
+
+Por seguridad/sensibilidad:
+- *.env (archivos de variables de entorno con secrets)
+- credentials.json (credenciales OAuth)
+- token.json (tokens de acceso)
+- client_secret.json (OAuth de Google)
+- *.bak (backups)
+
+Por tamaño/rendimiento:
+- __pycache__/ (cache de Python)
+- *.pyc (compilados Python)
+- .git/ (repositorios git)
+- node_modules/ (dependencias Node)
+- *.log (archivos de logs)
+- venv/ (entornos virtuales)
+
+================================================================================
+DEPENDENCIAS DETECTADAS
+================================================================================
+
+Python (requerimientos típicos):
+- python-telegram-bot
+- fastapi
+- uvicorn
+- httpx
+- python-dotenv
+- aiohttp
+
+Node.js (para algunos módulos):
+- npm/node_modules (no incluido)
+
+Servicios del sistema:
+- systemd services (*.service) - incluidos como referencia
+
+================================================================================
+NOTAS IMPORTANTES
+================================================================================
+
+1. CREDENCIALES FALTANTES:
+   - /root/finbot_mcp/finbot_mcp/.env → copiar manualmente
+   - /root/gmail_mcp/credentials.json → regenerar en HP
+   - /root/gmail_mcp/token.json → regenerar en HP
+   - /root/alert_hub/.env → copiar manualmente
+   - /root/alert_hub/client_secret.json → copiar manualmente
+
+2. SERVICIOS A RECREAR EN HP:
+   - cerebro-telegram.service
+   - finbot.service
+
+3. CRONJOBS A CONFIGURAR EN HP:
+   - gmail_mcp/cronjobs/gmail_alertas.py
+   - linkedin_mcp/cronjobs/linkedin_alertas.py
+   - finbot_mcp/finbot_mcp/cronjobs/alertas.py
+   - alert_hub/cron_check.sh
+
+4. PUERTOS TIPICOS:
+   - gmail_mcp: 8001
+   - linkedin_mcp: 8002
+   - mcp-finanzas: 8003
+   - alert_hub: 8000
+
+================================================================================
+INSTRUCCIONES PARA HP
+================================================================================
+
+1. Copiar archivo:
+   scp /root/export_to_hp.tar.gz planeta@192.168.1.139:~/
+
+2. En HP, extraer:
+   tar -xzf export_to_hp.tar.gz
+
+3. Copiar credenciales:
+   - FinBot .env
+   - Gmail credentials
+   - Alert Hub .env y client_secret.json
+
+4. Instalar dependencias:
+   pip install -r requirements.txt (en cada módulo)
+
+5. Configurar servicios systemd:
+   - Copiar *.service a /etc/systemd/system/
+   - systemctl daemon-reload
+   - systemctl enable --now cerebro-telegram
+   - systemctl enable --now finbot
+
+6. Configurar cronjobs:
+   crontab -e (añadir scripts de alertas)
+
+================================================================================
+COMANDO FINAL PARA EMPACAR
+================================================================================
+
+tar -czvf /root/export_to_hp.tar.gz -C /root export_to_hp
+
+================================================================================

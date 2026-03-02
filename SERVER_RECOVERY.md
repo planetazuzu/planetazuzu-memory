@@ -168,5 +168,10 @@ Los volúmenes deben restaurarse desde backups separados:
 - Servidor: Nexus (Hetzner)
 - IP: 207.180.226.141
 
+## Archivos de Referencia
+
+- `export_summary.txt` - Resumen de exportación a HP
+- `inventory_nexus_related.txt` - Inventario completo del servidor
+
 ---
 *Última actualización: 2026-03-02*
