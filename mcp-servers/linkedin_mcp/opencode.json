@@ -1,0 +1,10 @@
+{
+  "$schema": "https://opencode.ai/config.schema.json",
+  "mcp": {
+    "linkedin": {
+      "type": "local",
+      "command": "python3",
+      "args": ["/root/linkedin_mcp/server.py"]
+    }
+  }
+}
