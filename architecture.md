@@ -52,3 +52,53 @@ codeclaw-monorepo/
 - LangChain: abstracciones de IA
 - MCP: Model Context Protocol
 - FastAPI: patterns de API
+
+---
+
+## VPS Nexus - Arquitectura
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                      VPS Linux (Hetzner)                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌──────────────────┐  ┌──────────────────┐                │
+│  │  nexus-monitor  │  │    alert-hub     │                │
+│  │   (Python)      │  │    (Python)      │                │
+│  │   Puerto 31435  │  │   Puerto 31436   │                │
+│  └────────┬─────────┘  └────────┬─────────┘                │
+│           │                     │                           │
+│           └──────────┬──────────┘                           │
+│                      ▼                                      │
+│           ┌──────────────────┐                             │
+│           │  Telegram Bot    │                             │
+│           │ NotificenterBot  │                             │
+│           └──────────────────┘                             │
+│                                                              │
+│  ┌──────────────────┐                                       │
+│  │ server-monitor  │                                       │
+│  │    (MCP)       │◄──────── OpenCode                      │
+│  └──────────────────┘                                       │
+│                                                              │
+│  ┌──────────────────┐                                       │
+│  │    OpenClaw     │                                       │
+│  │   Gateway      │◄──────── Telegram                     │
+│  │   :18789       │                                       │
+│  └──────────────────┘                                       │
+│                                                              │
+│  ┌──────────────────┐  ┌──────────────────┐                │
+│  │      Nginx       │  │     Ollama       │                │
+│  │  :80 :443 :8888 │  │  :11434          │                │
+│  └──────────────────┘  └──────────────────┘                │
+│                                                              │
+│  ┌──────────────────────────────────────────────┐          │
+│  │              Docker Containers               │          │
+│  │  nextcloud, portainer, npm, blackbox...      │          │
+│  └──────────────────────────────────────────────┘          │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Redes Docker
+- blackbox-network, nexus-os_default, nginx-proxy-manager_default
+- portainer_default, web_network, talentos_default

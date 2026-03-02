@@ -1,5 +1,62 @@
 # Progress
 
+## 2026-03-02 (Servidor Nexus)
+
+### Inventario y Backup
+
+**Realizado:**
+- Parar todos los contenedores Docker (sin eliminar datos)
+- Backup completo en `/root/BACKUP_PRE_FORMAT_20260302_1252/`
+- Archivo final: `BACKUP_PRE_FORMAT_FINAL.tar.gz` (728K)
+
+**Archivos incluidos en backup:**
+- Puertos abiertos (ss -lntp)
+- docker ps -a, images, volumes
+- systemctl list-units running
+- Repos git encontrados
+- Top 50 procesos RAM/CPU
+- Configs: /root/.config/opencode, /root/.openclaw
+- docker-compose.yml encontrados
+- Volúmenes Docker documentados
+
+---
+
+### Configuración OpenCode/OpenClaw
+
+**Skills disponibles en servidor:**
+- 23 skills en /root/.config/opencode/skills/
+- MCP: codeclaw_builder (/root/codeclaw_builder_mcp.py)
+
+**Configuración actual:**
+```json
+{
+  "mcpServers": {
+    "codeclaw_builder": {
+      "command": "python3",
+      "args": ["/root/codeclaw_builder_mcp.py"]
+    }
+  }
+}
+```
+
+---
+
+### TalentOS (del AGENTS.md)
+
+**Estado:** Fase 1 92% completada
+- **Ubicación:** /var/www/proyectos/TalentOs/
+- **Framework:** Next.js 15 + TypeScript + Tailwind
+- **Arquitectura:** Multi-tenant SaaS
+
+**Características:**
+- DBProvider: Dexie (local) + PostgreSQL (servidor)
+- Genkit para IA (Google Gemini)
+- LTI 1.3 + SCORM 2004
+- RGPD/ARCO compliant
+- Shadcn/ui
+
+---
+
 ## 2026-03-02
 
 ### Limpieza de Sistema

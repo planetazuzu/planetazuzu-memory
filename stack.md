@@ -28,3 +28,41 @@
 ### Documentación
 - Markdown con i18n
 - Idiomas: en, zh-CN, ja, ru, fr, vi, el
+
+---
+
+## VPS Nexus (Servidor Productivo)
+
+### Sistema
+- **OS:** Linux (Debian/Ubuntu)
+- **Host:** vmi2782086 (Hetzner)
+- **IP:** 207.180.226.141
+- **Tailscale:** 100.84.169.7
+
+### Runtime
+- **Docker:** containerd + Docker Engine
+- **Python:** 3.x (servicios, nexus-monitor, alert-hub)
+- **Node.js:** 22.x (OpenCode MCP, server-monitor)
+- **Ollama:** Modelos IA locales
+
+### Servicios
+| Servicio | Descripción |
+|----------|-------------|
+| nexus-monitor | Monitor VPS (Python, puerto 31435) |
+| alert-hub | Bot notificaciones Telegram |
+| server-monitor-mcp | MCP para OpenCode |
+| OpenClaw Gateway | ws://127.0.0.1:18789 |
+| webhook-deploy | Receptor webhooks |
+
+### Contenedores Docker
+- Nextcloud (app + mariadb)
+- Portainer
+- Nginx Proxy Manager
+- blackbox (api + postgres + redis)
+- nexus-dashboard
+- openclaw-sandbox
+
+### Modelos Ollama
+- qwen3:8b (5.2 GB)
+- mistral:latest (4.4 GB)
+- llama3.2:3b (2.0 GB)

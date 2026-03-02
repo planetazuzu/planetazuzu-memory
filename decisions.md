@@ -1,5 +1,38 @@
 # Decisions
 
+## 2026-03-02 (Servidor)
+
+### D004: Stack del VPS Nexus
+
+**Contexto:** Documentar el stack productivo del servidor
+
+**Decisión:** Mantener servicios minimalistas con Docker
+
+**Razón:**
+- Docker aísla dependencias
+- Easy backup/restore de volúmenes
+- nginx como reverse proxy central
+
+**Consecuencias:**
+- 11 contenedores (todos detenidos para backup)
+- 4 volúmenes persistentes
+- Ollama con 3 modelos locales
+
+---
+
+### D005: OpenCode + OpenClaw en VPS
+
+**Contexto:** Agentes IA en el servidor
+
+**Decisión:** OpenCode como agente principal, OpenClaw para orquestación
+
+**Razón:**
+- OpenCode: asistencia general
+- OpenClaw: gateway Telegram + WebSocket
+- MCP servers: codeclaw_builder para CodeClaw
+
+---
+
 ## 2026-03-02
 
 ### D001: Roadmap de 12 meses
