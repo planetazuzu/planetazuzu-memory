@@ -263,6 +263,48 @@ Arquitectura de empresa IA autónoma distribuida en múltiples nodos/servidores.
 
 ---
 
+## SYSTEM PROMPTS & AGENTS
+
+- **Status:** active
+- **Priority:** P1
+- **Start:** 2026-02
+- **End:** null
+- **Owner:** planetazuzu
+- **Dependencies:** null
+
+### Resumen
+Conjunto de archivos de configuración para agentes IA (OpenClaw, OpenCode). Incluye prompts unificados,tools, identidad y memoria.
+
+### Archivos Incluidos
+
+| Archivo | Descripción |
+|---------|-------------|
+| `prompt-unificado-opencode.md` | Server Monitor + 19 Skills para OpenClaw |
+| `TOOLS.md` | Notes locales: SSH, nodos, TTS |
+| `AGENTS.md` | Workspace config, memoria, heartbeats |
+| `OPENCLAW_MULTIAGENT.md` | Config multiagente |
+| `MEMORY.md` | Memoria a largo plazo |
+| `USER.md` | Configuración de usuario |
+| `SOUL.md` | Principios/identidad del agente |
+| `IDENTITY.md` | Identidad |
+| `HEARTBEAT.md` | Tareas periódicas |
+
+### Ubicaciones
+- `/home/planetazuzu/agents/` - Directorio principal
+- `/home/planetazuzu/.zeroclaw/workspace/` - Workspace ZeroClaw
+
+### metadata
+```json
+{
+  "location": "/home/planetazuzu/agents/",
+  "docs": ["prompt-unificado-opencode.md", "TOOLS.md", "AGENTS.md"],
+  "contacts": ["planetazuzu"],
+  "tags": ["agents", "openclaw", "opencode", "prompts", "system"]
+}
+```
+
+---
+
 ## PROYECTOS EN DIRECTORIO
 
 ### work/proyectos/ (Proyectos Activos)
